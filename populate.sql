@@ -1,4 +1,3 @@
-
 insert into users values
 (1,'Ahmed Smith', 'MTL', '2020-01-01 14:01:56-08'),
 (2,'Yoshua Bengio', 'NY' ,'2020-02-11 10:11:26-08'),
@@ -12,8 +11,6 @@ insert into users values
 (10,'Molly Kramer', 'MTL', '2021-11-29 11:41:26-08'),
 (11,'Jessie Salinas', 'NY', '2021-11-29 11:41:26-08'),
 (12,'Rhonda Ferguson', 'NY', '2021-11-29 11:41:26-08');
-
-
 
 insert into follows values
 (1,4),
@@ -30,8 +27,6 @@ insert into follows values
 (12,5),
 (6,11),
 (6,10);
-
-
 
 insert into tweets values
 (1,1, '2019-01-09 14:41:26-08', 'Who cares'),
@@ -60,8 +55,6 @@ insert into tweets values
 (24,8, '2021-02-09 14:41:26-08', 'bonjour'),
 (25,8, '2021-02-09 14:41:26-08', 'last'),
 (26,8, '2021-02-09 14:41:26-08', 'one');
-
-
 
 INSERT INTO retweets VALUES
 (1, 3, '2002-01-19 14:41:26-08'),
@@ -94,8 +87,6 @@ INSERT INTO retweets VALUES
 (10, 5, '2021-01-19 14:41:26-08'),
 (10, 4, '2017-01-19 14:41:26-08'),
 (9, 21, '2027-01-19 14:41:26-08');
-
-
 
 insert into tweettags values
 (1, '#MachineLearning'),

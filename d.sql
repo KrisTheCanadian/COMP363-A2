@@ -16,7 +16,7 @@ WHERE follower.userid = follows.followerid
 -- This will yield the followers of the follower of Yoshua
 -- We want to finally select only the username and the city of the followers.
 -- Nested Query
-SELECT follower.username, follower.city
+SELECT DISTINCT follower.username, follower.city
 FROM (
     SELECT follower.username as follower, followed.username as followed
     FROM users as followed, users as follower, follows

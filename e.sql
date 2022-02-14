@@ -14,7 +14,7 @@ WHERE followed.username = 'Yoshua Bengio';
 -- We change the filter to the followed being equal to the followers of the inner query (followers of Yoshua)
 -- This shall return the follower of the followers of Yoshua using INNER JOINS and NESTED Queries
 -- nested query
-SELECT followers.username, followers.city
+SELECT DISTINCT followers.username, followers.city
 FROM (SELECT followers.userid as follower
     FROM follows
     INNER JOIN users as followers ON follows.followerid=followers.userid

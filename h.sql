@@ -1,6 +1,7 @@
--- Query all users who were retweeted once
--- Check this table will all users that is not part of that table
-SELECT DISTINCT users.username
-FROM users, tweets
-WHERE users.userid = tweets.userid
-AND tweetid NOT IN (SELECT retweets.tweetid FROM retweets);
+SELECT users.username AS users
+FROM users
+WHERE users.username NOT IN (
+    SELECT users.username
+    FROM users, retweets, tweets
+    WHERE retweets.tweetid = tweets.tweetid
+    AND tweets.userid = users.userid);

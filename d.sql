@@ -4,11 +4,11 @@
 -- We then filter by follower username and followee username to trim all the information from this table
 -- We finally filter the table to only users who are following Yoshua
 -- Inner Query
-SELECT follower.username as follower, followed.username as followed
-FROM users as followed, users as follower, follows
-WHERE follower.userid = follows.followerid
-    AND followed.userid = follows.followeeid
-    AND followed.username = 'Yoshua Bengio';
+-- SELECT follower.username as follower, followed.username as followed
+-- FROM users as followed, users as follower, follows
+-- WHERE follower.userid = follows.followerid
+--     AND followed.userid = follows.followeeid
+--     AND followed.username = 'Yoshua Bengio';
 
 -- Using the Table above and the same methodology we make another innerjoin on a follows table
 -- We associate again the follower to the followee with all their information

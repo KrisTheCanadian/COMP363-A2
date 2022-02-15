@@ -3,11 +3,11 @@
 -- We then filter the followed username to Yoshua
 -- We finally select the usernames of both
 -- inner query
-SELECT followers.username as follower, followed.username as followed
-FROM follows
-INNER JOIN users as followers ON follows.followerid=followers.userid
-INNER JOIN users as followed ON follows.followeeid=followed.userid
-WHERE followed.username = 'Yoshua Bengio';
+-- SELECT followers.username as follower, followed.username as followed
+-- FROM follows
+-- INNER JOIN users as followers ON follows.followerid=followers.userid
+-- INNER JOIN users as followed ON follows.followeeid=followed.userid
+-- WHERE followed.username = 'Yoshua Bengio';
 
 -- We get the inner query above and the follows table
 -- We perform the same 2 INNER JOINS as above
